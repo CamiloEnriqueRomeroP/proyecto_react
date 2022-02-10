@@ -1,7 +1,7 @@
-import React from 'react'
+import React from "react";
 
 export function ToDoItem({ toDo, toggleToDo }) {
-  const {id, task, completed} = toDo;
+  const { id, task, completed } = toDo;
 
   const handleToDoClick = () => {
     toggleToDo(id);
@@ -9,8 +9,8 @@ export function ToDoItem({ toDo, toggleToDo }) {
 
   return (
     <li>
-      <input type="checkbox" onChange={handleToDoClick}/>
+      <input type="checkbox" onChange={handleToDoClick} />
       {task}
     </li>
-  )
+  );
 }
